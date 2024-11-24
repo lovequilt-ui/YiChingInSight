@@ -33,11 +33,15 @@
             font-size: 1.2em;
             line-height: 1.6;
         }
-        img {
-            max-width: 100%;
+        .app-images {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .app-images img {
+            max-width: 30%; /* 调整每个图片的最大宽度 */
             height: auto;
             display: block;
-            margin: 20px 0;
         }
         .download-button {
             display: inline-block;
@@ -65,21 +69,25 @@
 </head>
 <body>
     <header>
-        <h1>我的应用下载</h1>
+        <h1>易数卦缘下载</h1>
     </header>
     <main>
-        <h2>应用名称：我的应用</h2>
-        <img src="https://your-image-url/your-app-image.png" alt="我的应用截图">
-        <p>应用简介：《易数卦缘》基于《周易》，提供便捷的数字卦占卜，帮助解决职场、情感、健康及日常问题。应用包含六十四卦详细解析，操作简单，随时随地获取深刻占卜体验，是您生活中的智慧指南</p>
+        <h2>应用名称：易数卦缘</h2>
+        <div class="app-images">
+            <img src="/0.png" alt="易数卦缘1">
+            <img src="/1.png" alt="易数卦缘2">
+            <img src="/2.png" alt="易数卦缘3">
+        </div>
+        <p>基于《周易》，提供便捷的数字卦占卜，帮助解决职场、情感、健康及日常问题。应用包含六十四卦详细解析，操作简单，随时随地获取深刻占卜体验，是您生活中的智慧指南</p>
         <ul>
             <li>功能强大，操作简便</li>
             <li>界面美观，用户体验佳</li>
         </ul>
-        <p>感谢您选择我们的应用！请点击下方链接下载最新版本。</p>
-        <a href="/app-release.apk" class="download-button" download>下载 APK 文件</a>
+        <p>感谢您选择我的应用！请点击下方链接下载最新版本。</p>
+        <a href="https://github.com/lovequilt-ui/YiChingInSight/releases/download/demo/app-release.apk" class="download-button" download>下载 APK 文件</a>
     </main>
     <footer>
-        <p>&copy; 2024 我的公司. All rights reserved.</p>
+        <p>&copy; 2024 jeese.song. All rights reserved.</p>
     </footer>
 </body>
 </html>
